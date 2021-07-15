@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div>
+		<h2>Индекс массы тела</h2>
+		<p class="text">Рост</p>
+		<input type="number" min="1" id="h" onchange="this.value = Math.max(this.value,1)">
+		<p class="text">Вес</p>
+		<input type="number" min="1" id="w" onchange="this.value = Math.max(this.value,1)">
+		<p id="result"></p>
+		<p id="title"></p>
+		<button id="btn"  onClick="BMI()">Рассчитать</button>
+		<p id="info">Введите рост [см] и вес [кг]</p>
+	</div>
+
+	<script src="index.js"></script>
+	
+</body>
+</html>
